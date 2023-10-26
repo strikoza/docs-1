@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,18 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11-jre-headless-ubuntu`, `11-jre-headless-ubuntu-jammy`, `11-jre-headless-ubuntu-22.04`, `11.0.21-jre-headless-ubuntu`, `11.0.21-jre-headless-ubuntu-jammy`, `11.0.21-jre-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/f85d04d3ea43c50dd1bc1db261be249dee1e6464/dockerfiles/official/11/ubuntu/jre-headless/Dockerfile)
--	[`11-jre-ubuntu`, `11-jre-ubuntu-jammy`, `11-jre-ubuntu-22.04`, `11.0.21-jre-ubuntu`, `11.0.21-jre-ubuntu-jammy`, `11.0.21-jre-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/f85d04d3ea43c50dd1bc1db261be249dee1e6464/dockerfiles/official/11/ubuntu/jre/Dockerfile)
--	[`11-jdk-headless-ubuntu`, `11-jdk-headless-ubuntu-jammy`, `11-jdk-headless-ubuntu-22.04`, `11.0.21-jdk-headless-ubuntu`, `11.0.21-jdk-headless-ubuntu-jammy`, `11.0.21-jdk-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/f85d04d3ea43c50dd1bc1db261be249dee1e6464/dockerfiles/official/11/ubuntu/jdk-headless/Dockerfile)
--	[`11-jdk-ubuntu`, `11-jdk-ubuntu-jammy`, `11-jdk-ubuntu-22.04`, `11.0.21-jdk-ubuntu`, `11.0.21-jdk-ubuntu-jammy`, `11.0.21-jdk-ubuntu-22.04`, `11`, `11-ubuntu-jammy`, `11-ubuntu-22.04`, `11.0.21`, `11.0.21-ubuntu-jammy`, `11.0.21-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/f85d04d3ea43c50dd1bc1db261be249dee1e6464/dockerfiles/official/11/ubuntu/jdk/Dockerfile)
--	[`17-jre-headless-ubuntu`, `17-jre-headless-ubuntu-jammy`, `17-jre-headless-ubuntu-22.04`, `17.0.9-jre-headless-ubuntu`, `17.0.9-jre-headless-ubuntu-jammy`, `17.0.9-jre-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/eb4c15faebbc9b6faba22c7ece6c2c0c83480768/dockerfiles/official/17/ubuntu/jre-headless/Dockerfile)
--	[`17-jre-ubuntu`, `17-jre-ubuntu-jammy`, `17-jre-ubuntu-22.04`, `17.0.9-jre-ubuntu`, `17.0.9-jre-ubuntu-jammy`, `17.0.9-jre-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/eb4c15faebbc9b6faba22c7ece6c2c0c83480768/dockerfiles/official/17/ubuntu/jre/Dockerfile)
--	[`17-jdk-headless-ubuntu`, `17-jdk-headless-ubuntu-jammy`, `17-jdk-headless-ubuntu-22.04`, `17.0.9-jdk-headless-ubuntu`, `17.0.9-jdk-headless-ubuntu-jammy`, `17.0.9-jdk-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/eb4c15faebbc9b6faba22c7ece6c2c0c83480768/dockerfiles/official/17/ubuntu/jdk-headless/Dockerfile)
--	[`17-jdk-ubuntu`, `17-jdk-ubuntu-jammy`, `17-jdk-ubuntu-22.04`, `17.0.9-jdk-ubuntu`, `17.0.9-jdk-ubuntu-jammy`, `17.0.9-jdk-ubuntu-22.04`, `17`, `17-ubuntu-jammy`, `17-ubuntu-22.04`, `17.0.9`, `17.0.9-ubuntu-jammy`, `17.0.9-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/eb4c15faebbc9b6faba22c7ece6c2c0c83480768/dockerfiles/official/17/ubuntu/jdk/Dockerfile)
--	[`21-jre-headless-ubuntu`, `21-jre-headless-ubuntu-jammy`, `21-jre-headless-ubuntu-22.04`, `21.0.1-jre-headless-ubuntu`, `21.0.1-jre-headless-ubuntu-jammy`, `21.0.1-jre-headless-ubuntu-22.04`, `jre-headless-ubuntu`, `jre-headless-ubuntu-jammy`, `jre-headless-ubuntu-jammy-22.04`, `lts-jre-headless-ubuntu`, `lts-jre-headless-ubuntu-jammy`, `lts-jre-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/6331a3cfdcab77387d42beff859547d31b281ca7/dockerfiles/official/21/ubuntu/jre-headless/Dockerfile)
--	[`21-jre-ubuntu`, `21-jre-ubuntu-jammy`, `21-jre-ubuntu-22.04`, `21.0.1-jre-ubuntu`, `21.0.1-jre-ubuntu-jammy`, `21.0.1-jre-ubuntu-22.04`, `jre-ubuntu`, `jre-ubuntu-jammy`, `jre-ubuntu-jammy-22.04`, `lts-jre-ubuntu`, `lts-jre-ubuntu-jammy`, `lts-jre-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/6331a3cfdcab77387d42beff859547d31b281ca7/dockerfiles/official/21/ubuntu/jre/Dockerfile)
--	[`21-jdk-headless-ubuntu`, `21-jdk-headless-ubuntu-jammy`, `21-jdk-headless-ubuntu-22.04`, `21.0.1-jdk-headless-ubuntu`, `21.0.1-jdk-headless-ubuntu-jammy`, `21.0.1-jdk-headless-ubuntu-22.04`, `jdk-headless-ubuntu`, `jdk-headless-ubuntu-jammy`, `jdk-headless-ubuntu-jammy-22.04`, `lts-jdk-headless-ubuntu`, `lts-jdk-headless-ubuntu-jammy`, `lts-jdk-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/6331a3cfdcab77387d42beff859547d31b281ca7/dockerfiles/official/21/ubuntu/jdk-headless/Dockerfile)
--	[`21-jdk-ubuntu`, `21-jdk-ubuntu-jammy`, `21-jdk-ubuntu-22.04`, `21.0.1-jdk-ubuntu`, `21.0.1-jdk-ubuntu-jammy`, `21.0.1-jdk-ubuntu-22.04`, `jdk-ubuntu`, `jdk-ubuntu-jammy`, `jdk-ubuntu-jammy-22.04`, `lts-jdk-ubuntu`, `lts-jdk-ubuntu-jammy`, `lts-jdk-ubuntu-22.04`, `21`, `21-ubuntu-jammy`, `21-ubuntu-22.04`, `21.0.1`, `21.0.1-ubuntu-jammy`, `21.0.1-ubuntu-22.04`, `latest`, `ubuntu-jammy`, `ubuntu-22.04`, `lts`, `lts-ubuntu-jammy`, `lts-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/6331a3cfdcab77387d42beff859547d31b281ca7/dockerfiles/official/21/ubuntu/jdk/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/sapmachine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/sapmachine.svg?label=s390x/sapmachine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/sapmachine/)
 
 # Quick reference (cont.)
 
@@ -73,14 +66,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull s390x/sapmachine:latest
+docker run -it s390x/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM s390x/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]
