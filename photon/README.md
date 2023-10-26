@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`5.0`, `5.0-20231021`, `latest`](https://github.com/vmware/photon-docker-image/blob/d42043c311abfcb8f72897cf1502879f6e123d74/docker/Dockerfile)
 -	[`4.0`, `4.0-20231021`](https://github.com/vmware/photon-docker-image/blob/aa758d33c2b1f954c0966f081212af012794c074/docker/Dockerfile)
 -	[`3.0`, `3.0-20231014`](https://github.com/vmware/photon-docker-image/blob/cd1c88a98f796df35ead98a1de708cbc083fb3d4/docker/Dockerfile)
+
+[![amd64/photon build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/photon.svg?label=amd64/photon%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/photon/)
 
 # Quick reference (cont.)
 
@@ -59,7 +63,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM amd64/photon:1.0GA`.
 
 ## Support
 
