@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/75c4d0029825ab9802240f2a086395d728e1853f/x86_64/Dockerfile)
--	[`p9`](https://github.com/alt-cloud/docker-brew-alt/blob/d1f01d08ac608909403bc99501af07065d7be769/x86_64/Dockerfile)
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/cf707869d0d33a76fa3eed5eb2592c07a0a11e23/x86_64/Dockerfile)
+-	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/75c4d0029825ab9802240f2a086395d728e1853f/ppc64le/Dockerfile)
+-	[`p9`](https://github.com/alt-cloud/docker-brew-alt/blob/d1f01d08ac608909403bc99501af07065d7be769/ppc64le/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/cf707869d0d33a76fa3eed5eb2592c07a0a11e23/ppc64le/Dockerfile)
+
+[![ppc64le/alt build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/alt.svg?label=ppc64le/alt%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/alt/)
 
 # Quick reference (cont.)
 
@@ -71,7 +75,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `ppc64le/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `ppc64le/alt:p9`).
 
 ## How It's Made
 
