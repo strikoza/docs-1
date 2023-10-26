@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20231003`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20231003-9e020e15&id=9e020e15c69afd6448227ca485f23c062a3b8939)
--	[`22.04`, `jammy-20231004`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20231004-b438933c&id=b438933cb5f916fc82c2422834bcd6bf6161f3e9)
--	[`23.04`, `lunar-20231004`, `lunar`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20231004-151826dc&id=151826dc80889bec7813dc057ce919012e3dfddd)
--	[`23.10`, `mantic-20231011`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20231011-4ceef731&id=4ceef731f584cc4086b74ef42d52a99f419b7f9c)
+-	[`20.04`, `focal-20231003`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-arm64v8-20231003-030aca1a&id=030aca1ae53e10bf81a4a5c33ab304ad5a5d2cbe)
+-	[`22.04`, `jammy-20231004`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-arm64v8-20231004-d3beefb6&id=d3beefb60cb7e5d1a664863baca4cacb1cd12947)
+-	[`23.04`, `lunar-20231004`, `lunar`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-arm64v8-20231004-c355d34c&id=c355d34c315b8ee0dae57cae2231ee0de2e6ac00)
+-	[`23.10`, `mantic-20231011`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-arm64v8-20231011-fe12ecc0&id=fe12ecc0047e22d9686954c21c34a7a3a0e96dc2)
+
+[![arm64v8/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/ubuntu.svg?label=arm64v8/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -62,9 +66,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `arm64v8/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `arm64v8/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `arm64v8/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
