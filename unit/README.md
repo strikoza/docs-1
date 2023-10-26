@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `unit` official image](https://hub.docker.com/_/unit) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,18 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.31.1-go1.21`, `go1.21`, `go1`, `go`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.go1.21)
--	[`1.31.1-go1.20`, `go1.20`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.go1.20)
--	[`1.31.1-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.jsc11)
--	[`1.31.1-node20`, `node20`, `node`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.node20)
--	[`1.31.1-node18`, `node18`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.node18)
--	[`1.31.1-perl5.38`, `perl5.38`, `perl5`, `perl`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.perl5.38)
--	[`1.31.1-perl5.36`, `perl5.36`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.perl5.36)
--	[`1.31.1-php8.2`, `php8.2`, `php8`, `php`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.php8.2)
--	[`1.31.1-python3.11`, `python3.11`, `python3`, `python`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.python3.11)
--	[`1.31.1-ruby3.2`, `ruby3.2`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.ruby3.2)
--	[`1.31.1-wasm`, `wasm`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.wasm)
--	[`1.31.1-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.minimal)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/unit build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/unit.svg?label=winamd64/unit%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/unit/)
 
 # Quick reference (cont.)
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.5-sdk`, `3.1-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.1.5`, `3.1`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/2e7e751f174af125f91842b5d06450b5f1d94fbb/stable/bookworm/Dockerfile)
--	[`3.2.0-210.3.beta-sdk`, `beta-sdk`, `3.2.0-210.3.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/2e7e751f174af125f91842b5d06450b5f1d94fbb/beta/bookworm/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/dart build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/dart.svg?label=winamd64/dart%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/dart/)
 
 # Quick reference (cont.)
 
